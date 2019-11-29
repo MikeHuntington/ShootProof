@@ -1,0 +1,73 @@
+#treeComponent {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.root {
+    margin-bottom: 5px;
+}
+
+.child {
+    margin: 5px 0 2px 20px;
+    cursor: default;
+}
+
+.children > .nodeContent {
+    cursor: pointer;
+}
+
+.children > .nodeContent > .nodeHeader i {
+    display: inline-block;
+}
+
+.nodeImage {
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+}
+
+.nodeContent > div:last-child {
+    display: none;
+}
+
+.nodeContent > div:first-child {
+    display: block;
+}
+
+.nodeContent i {
+    display: none;
+}
+
+.open > .nodeContent > div:last-child {
+    display: block
+}
+
+.nodeHeader {
+    padding: 5px;
+    height: 25px;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 0.2em;
+    position: relative;
+}
+
+.vertical-center, span, i {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.vertical-center > span {
+    left: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.vertical-center > i {
+    left: 100px;
+    pointer-events: none;
+}
